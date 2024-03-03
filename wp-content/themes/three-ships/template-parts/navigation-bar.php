@@ -27,7 +27,7 @@
 wp_nav_menu(array(
     'theme_location' => 'primary',
     'menu_class' => 'menu hidden md:flex gap-2 ', // Hide on small screens, show on medium and larger screens
-    'container' => false, // No container element
+    'container' => false, 
     'link_before' => '<span class="menu-item-link">', // Add a custom CSS class to each menu item link
 ));
 ?>

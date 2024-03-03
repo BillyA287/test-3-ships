@@ -1,5 +1,4 @@
-<?php
-function enqueue_custom_styles()
+<?php function enqueue_custom_styles()
 {
     // Enqueue CSS file
     wp_enqueue_style('styles', get_stylesheet_directory_uri() . '/src/output.css');
@@ -21,11 +20,6 @@ function register_my_menu() {
 }
 add_action('after_setup_theme', 'register_my_menu');
 
-
-
-
-
-
 // Custom post type function 
 function create_product_post_type() {
     $args = array(
@@ -38,8 +32,6 @@ function create_product_post_type() {
 add_action( 'init', 'create_product_post_type' );
 
 // hover for menu items
-
-
 function add_product_custom_fields() {
     add_meta_box(
         'product_details',
@@ -54,13 +46,13 @@ add_action( 'add_meta_boxes', 'add_product_custom_fields' );
 
 function render_product_custom_fields( $post ) {
     // Render custom fields here using HTML input elements
-     // Retrieve existing values for custom fields
-     $product_price = get_post_meta( $post->ID, 'product_price', true );
-     $product_description = get_post_meta( $post->ID, 'product_description', true );
-     $product_image_url = get_post_meta( $post->ID, 'product_image_url', true );
+    // Retrieve existing values for custom fields
+    $product_price = get_post_meta( $post->ID, 'product_price', true );
+    $product_description = get_post_meta( $post->ID, 'product_description', true );
+    $product_image_url = get_post_meta( $post->ID, 'product_image_url', true );
     ?>
     <div class="product-custom-fields">
-    <label for="product-name">Product Name:</label>
+        <label for="product-name">Product Name:</label>
         <input type="text" id="product-name" name="product_name" value="<?php echo esc_attr( $post->post_title ); ?>" readonly>
 
         <label for="product-price">Product Price:</label>
@@ -72,9 +64,5 @@ function render_product_custom_fields( $post ) {
         <label for="product-image">Product Image URL:</label>
         <input type="text" id="product-image" name="product_image_url" value="<?php echo esc_url( $product_image_url ); ?>">
     </div>
-
     <?php
-     
 }
-
-

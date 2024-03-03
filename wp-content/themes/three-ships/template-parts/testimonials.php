@@ -31,7 +31,7 @@
          </div>
            
          </div> 
-           <img class="inline-flex col-span-7" src="https://dummyimage.com/600x480/000/fff.png&text=small+screen+size+" alt="">  
+           <img class="inline-flex col-span-7 sm:row-span-4 grid-cols-12" src="https://dummyimage.com/600x480/000/fff.png&text=small+screen+size+" alt="">  
          </div>
         </div>
     </div>
