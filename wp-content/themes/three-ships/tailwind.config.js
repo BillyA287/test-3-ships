@@ -6,6 +6,7 @@ module.exports = {
    purge:[
     "./**/*.php"
    ],
+   
     theme: {
       gridTemplateColumns: {
         '12': 'repeat(12, minmax(0, 1fr))',

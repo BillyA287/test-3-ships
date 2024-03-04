@@ -8,8 +8,10 @@ Template Name: Standard Gutters
 
 
 <div class="product-container lg:mx-auto lg:max-w-[800px]">
+
     <div class="product-info mt-4 md:gap-4 sm:flex flex-col lg:grid grid-cols-12">
     <img class="sm:col-span-6 rounded-md" src="https://dummyimage.com/600x480/000/fff.png&text=small+screen+size+" alt="">
+
     <div class="product-description sm:flex flex-col md:col-span-6">
     <div class="gutter-heading-text flex flex-row  sm:mt-2.5 lg:col-span-12 ">
         <span class="bg-slate-300 p-1 font-semibold rounded-md sm:text-sm">Gutter Product</span>
@@ -35,9 +37,12 @@ Template Name: Standard Gutters
     </div>
 
     </div>
+  <h1>tooo</h1>
+  <?php get_template_part('template-parts/image-carousel') ?>
+
     </div>
 
-</div>
+
 
 
 <?php get_footer(); ?>

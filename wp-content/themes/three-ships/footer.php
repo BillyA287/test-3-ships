@@ -22,10 +22,5 @@ wp_nav_menu(array(
 
 </div>
 
-
-
-
-
-
 </body>
 </html>
