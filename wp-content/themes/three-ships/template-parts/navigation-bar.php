@@ -1,5 +1,5 @@
 
-<div class=" flex-row justify-between items-baseline p-2 lg:mx-auto lg:max-w-[1000px]">
+<div class=" flex-row justify-between items-baseline p-2 lg:mx-auto ">
 <div class=" sm:p-2 nav-container flex justify-between" >
  <a href="">
 <img src="<?php echo get_template_directory_uri(); ?>/assets/home.svg" alt="Home">
