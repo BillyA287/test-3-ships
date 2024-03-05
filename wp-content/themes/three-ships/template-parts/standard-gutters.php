@@ -30,18 +30,19 @@ Template Name: Standard Gutters
     </div>
     <div class="price-button-container  flex items-center  gap-4">
         <h2 class="font-bold">Price: $199.99</h2>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded sm:my-2 text-sm">
+        <button class="bg-black hover:bg-slate-200 text-white font-bold py-2 px-4 rounded sm:my-2 text-sm">
             Buy Now
         </button>
     </div>
     </div>
 
     </div>
-  <h1>tooo</h1>
-  <?php get_template_part('template-parts/image-carousel') ?>
+
 
     </div>
 
+
+  <?php get_template_part('template-parts/image-carousel') ?>
 
 
 
